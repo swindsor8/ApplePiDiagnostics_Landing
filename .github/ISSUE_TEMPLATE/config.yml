@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/swindsor8/ApplePiDiagnostics_Landing#readme
+    about: Check our documentation first for common questions
+  - name: Community Discussion
+    url: https://github.com/swindsor8/ApplePiDiagnostics_Landing/discussions
+    about: Start a discussion for questions or general feedback
