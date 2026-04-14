@@ -221,7 +221,7 @@
     .dot { width: 11px; height: 11px; border-radius: 50%; }
     .dr{background:#ff5f57} .dy{background:#febc2e} .dg{background:#28c840}
     .ttitle { font-size: var(--xs); color: rgba(255,255,255,.22); margin: 0 auto; }
-    .tbody { padding: 26px 30px 30px; min-height: 260px; max-height: 680px; overflow-y: auto; }
+    .tbody { padding: 26px 30px 30px; min-height: 260px; }
     .tline { display: block; min-height: 1.85em; }
     /* Terminal colors */
     .cp{color:#6bcb6b} .cc{color:#f4efe8} .ct{color:#e8837a}
@@ -916,37 +916,9 @@ const termLines=[
   {html:'<span class="ct">[APD]</span> GPIO verification... <span class="cok">OK</span>', delay:500},
   {html:'<span class="cd">──────────────────────────────────────</span>', delay:300},
   {html:'<span class="ct">[APD]</span> All diagnostics complete. <span class="ck">✓</span> Report saved.', delay:400},
-  // ── Binary logo ──────────────────────────────────────
-  {html:'', delay:1100},
-  {html:'<span class="cp">$</span> <span class="cc">apd --logo</span>', delay:500},
+  {html:'', delay:600},
   {html:'<span class="cd">──────────────────────────────────────</span>', delay:200},
-  {html:'<span class="ct">[APD]</span> Rendering binary pictograph...', delay:300},
-  {html:'', delay:400},
-  // stem
-  {html:'<span class="cd">0000000000</span><span class="cok">1</span><span class="cd">0000000000</span>', delay:60},
-  {html:'<span class="cd">000000000</span><span class="cok">111</span><span class="cd">000000000</span>', delay:60},
-  // leaf
-  {html:'<span class="cd">0000000</span><span class="cok">11</span><span class="cd">000</span><span class="cok">11</span><span class="cd">0000000</span>', delay:60},
-  {html:'<span class="cd">00000</span><span class="cok">11111111111</span><span class="cd">00000</span>', delay:60},
-  // apple top curve
-  {html:'<span class="cd">000</span><span class="ct">111</span><span class="cd">000000000</span><span class="ct">111</span><span class="cd">000</span>', delay:60},
-  {html:'<span class="cd">00</span><span class="ct">11</span><span class="cd">0000000000000</span><span class="ct">11</span><span class="cd">00</span>', delay:60},
-  {html:'<span class="cd">0</span><span class="ct">11</span><span class="cd">000000000000000</span><span class="ct">11</span><span class="cd">0</span>', delay:60},
-  // π crossbar
-  {html:'<span class="cd">0</span><span class="ct">11</span><span class="cd">000</span><span class="cv">111111111</span><span class="cd">000</span><span class="ct">11</span><span class="cd">0</span>', delay:60},
-  // π legs
-  {html:'<span class="cd">0</span><span class="ct">11</span><span class="cd">000</span><span class="cv">11</span><span class="cd">00000</span><span class="cv">11</span><span class="cd">000</span><span class="ct">11</span><span class="cd">0</span>', delay:60},
-  {html:'<span class="cd">0</span><span class="ct">11</span><span class="cd">000</span><span class="cv">11</span><span class="cd">00000</span><span class="cv">11</span><span class="cd">000</span><span class="ct">11</span><span class="cd">0</span>', delay:60},
-  // apple bottom curve
-  {html:'<span class="cd">0</span><span class="ct">11</span><span class="cd">000000000000000</span><span class="ct">11</span><span class="cd">0</span>', delay:60},
-  {html:'<span class="cd">00</span><span class="ct">11</span><span class="cd">0000000000000</span><span class="ct">11</span><span class="cd">00</span>', delay:60},
-  {html:'<span class="cd">000</span><span class="ct">111</span><span class="cd">000000000</span><span class="ct">111</span><span class="cd">000</span>', delay:60},
-  {html:'<span class="cd">00000</span><span class="ct">11111111111</span><span class="cd">00000</span>', delay:60},
-  {html:'<span class="cd">0000000</span><span class="ct">1111111</span><span class="cd">0000000</span>', delay:60},
-  // done
-  {html:'', delay:300},
-  {html:'<span class="cd">──────────────────────────────────────</span>', delay:100},
-  {html:'<span class="cps">Apple Pi Diagnostics</span> <span class="ck">✓</span>', delay:100},
+  {html:'<span class="cps">Apple Pi Diagnostics</span> <span class="ck">🍎</span>', delay:200},
 ];
 
 let termStarted=false;
