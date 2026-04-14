@@ -1093,9 +1093,19 @@ fetch('https://api.github.com/repos/swindsor8/ApplePiDiagnostics')
   }
 
   [$('download-btn'),$('dl-btn'),$('cta-dl-btn')].forEach(btn=>{
-    if(btn) btn.addEventListener('click',()=>{
-      showToast('Download starting…');
+    if(btn) btn.addEventListener('click',e=>{
+      e.preventDefault();
+      const href=btn.getAttribute('href');
       runRain();
+      // Let the rain play, then trigger the download
+      setTimeout(()=>{
+        showToast('Download starting…');
+        const a=document.createElement('a');
+        a.href=href; a.target='_blank'; a.rel='noopener';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      },2200);
     });
   });
 })();
